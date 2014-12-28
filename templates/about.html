@@ -1,0 +1,39 @@
+<!doctype html>
+<<html>
+    <head>
+        <style type="text/css">
+
+            body {font-family:times, Sans-Serif;}
+
+            #container {width:1000px; margin:1000 auto;}
+
+            /* Nicely lines up the labels. */
+            form label {display:inline-block; width:1000px;}
+
+            /* You could add a class to all the input boxes instead, if you like. That would be safer, and more backwards-compatible */
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"] {width:160px;}
+
+            form .line {clear:both;}
+            form .line.submit {text-align:left;}
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <form>
+                <h1>Ask Question</h1>
+                <div class="line"><label for="username">Username: </label><input type="text" id="username" /></div>
+                <div class="line"><label for="add">E-mail Addres: </label><input type="text" id="add" /></div>
+                <div class="line"><label for="add">Question: </label><input type="text" id="add" /></div>
+
+                <div class="line submit"><input type="submit" value="Submit" /></div>
+
+
+                <p>We will try to answered your question as soon as possible and send your email address.Thanks!!</p>
+
+            </form>
+        </div>
+    </body>
+</html>
