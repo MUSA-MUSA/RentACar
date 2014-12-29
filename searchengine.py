@@ -23,7 +23,7 @@ def get_cars():
 def calculate_tf(term):
     """
 
-    this is find fequncy of words
+    this is find fequncy of wordsdgsdg
     """
     tf_scores = {}
     cars = get_cars()
