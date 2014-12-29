@@ -24,5 +24,9 @@ def navbar(request):
 def register(request):
     remplate='register.html'
     return render(request, remplate)
+def rent(request):
+    template='rent.html'
+    return render(request, template)
+
 
 

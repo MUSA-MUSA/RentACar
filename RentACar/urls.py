@@ -12,6 +12,10 @@ urlpatterns = patterns('',
     url(r'^register$', 'RentACar.views.register'),
     url(r'^navbar$', 'RentACar.views.navbar'),
     url(r'^result', 'RentACar.views.result'),
+    url(r'^rent', 'RentACar.views.rent'),
+
+
+
 
     url(r'^admin/', include(admin.site.urls)),
 
