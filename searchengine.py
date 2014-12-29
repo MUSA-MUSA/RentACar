@@ -21,6 +21,10 @@ def get_cars():
 
 
 def calculate_tf(term):
+    """
+
+    this is find fequncy of words
+    """
     tf_scores = {}
     cars = get_cars()
     for car in cars:
@@ -28,8 +32,7 @@ def calculate_tf(term):
         d_terms = get_tokens(car.Notes) # description
 
         tf_t = t_terms.count(term)/float(len(t_terms))
-        tf_d = d_terms.count(term)/float(len(d_terms))
-        tf_scores[car] = tf_t + tf_d*0.8
+        tf_scores[car] = tf_t
 
     return tf_scores
 
